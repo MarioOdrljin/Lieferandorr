@@ -1,0 +1,327 @@
+body {
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-content {
+    height: 100%;
+    width: 100%;
+
+
+
+}
+
+.navbar {
+    height: 60px;
+    width: auto;
+    background-color: #FF7F01;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.navbar span {
+    text-decoration: underline;
+    color: white
+}
+
+.navbar span:hover {
+    color: #D3D3D3;
+
+}
+
+.location {
+    color: white;
+    font-size: 20px;
+    padding-right: 300px;
+}
+
+.navbar-logo {
+    height: 73px;
+    width: 239px;
+}
+
+
+.dropdown {
+    height: 20px;
+    width: 20px;
+    padding-right: 20px;
+}
+
+.dropdown i {
+    color: white;
+}
+.dropdown :hover{
+    color:#3c1e00;
+    transition: 5ms;
+
+}
+
+.main-container {
+    display: flex;
+}
+
+.fa-brands,
+.fab {
+    font-weight: 400;
+    padding-top: 10px;
+}
+
+
+
+.resturant-container {
+    height: 1%;
+    width: 75%;
+}
+
+.shopping-card-container {
+    background-color: rgb(255, 255, 255);
+    width: 25%;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.resturant-picture {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.resturant-ratingstars {
+    display: flex;
+    flex-direction: row;
+    font-size: 17px;
+}
+
+.resturant-rating-overall {
+    font-size: 17px;
+    gap: 10px;
+    padding-left: 10px;
+
+}
+
+.resturant-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    box-shadow: inset rgba(99, 99, 99, 0.2) 0px 8px 14px 10px;
+}
+
+.resturant-logo {
+    height: 180px;
+    width: 180px;
+    border: 0px solid rgb(253, 135, 1);
+    border-radius: 50%;
+    position: absolute;
+    top: 100px;
+    left: 250px;
+    object-fit: cover;
+}
+
+.resturant-infofavo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.resturant-slider {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    height: 100px;
+    gap: 25px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+}
+
+.resturant-orders {
+    display: flex;
+    gap: 49px;
+}
+
+.resturant-orders li {
+    display: flex;
+    gap: 50px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.warenkorb-content-scroll {
+    height: 100%;
+
+}
+
+.shopping-result {
+    margin: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border: 2px solid rgb(255 118 0);
+    border-top-style: none;
+    border-left-style: none;
+    border-right-style: none;
+}
+
+
+.resturant-dishcard {
+    height: 130px;
+    width: auto;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    margin: 20px;
+    border-radius: 4px;
+    border: 2px solid #cecccc;
+    background-color: white;
+}
+
+.resturant-dishcard:hover {
+    background-color: rgb(255, 255, 255);
+}
+
+.resturant-dishcard:active {
+    background-color: #e4e4e4f0;
+    box-shadow: 0 5px #a5a5a5;
+    transform: translateY(4px);
+}
+
+.dishcard-informations {
+    display: flex;
+    justify-content: space-between;
+    height: 130px;
+
+
+}
+
+.dishcard-reciept {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.dishcard-addtocardbtn {
+    height: 43px;
+    width: 47px;
+    text-align: center;
+    border: 1px solid grey;
+    border-radius: 10%;
+}
+
+.warenkorb-edit {
+    display: flex;
+    gap: 20px;
+    align-items: start;
+    text-align: start;
+    justify-content: start;
+    flex-direction: column;
+}
+
+.returant-order {
+    height: 50px;
+    width: 250px;
+    color: black;
+    background: #FF7F01;
+    display: flex;
+    justify-content: center;
+    margin-left: 70px;
+    align-items: center;
+    font-size: 15px;
+}
+
+.warenkorb-delete {
+    color: rgb(255, 0, 0);
+    padding: 10px;
+    text-decoration: none;
+
+}
+
+.resturant-links {
+    text-decoration: none;
+    color: black;
+
+}
+
+.resturant-links:hover {
+    text-decoration: underline orange;
+}
+
+resturant-links a:hover a:active {
+    background-color: black;
+}
+.hide {
+    display: none;
+}
+.show {
+    width: 100%;
+}
+.logofullscreen {
+    left: 420px;
+}
+.warenkorb-content-scroll {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    border: 2px solid rgb(255, 118, 0);
+    margin: 28px;
+    border-left-style: none;
+    border-right-style: none;
+    overflow-y: scroll;
+    max-height: 200px;
+  }
+  
+  .warenkorb-item {
+    margin-bottom: 0px; 
+  }
+  
+  .warenkorb-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap:10px;
+  }
+  #confirm {
+    display: none;
+    background-color: #FF7F01;
+    color: #000000;
+    border: 6px solid #000000;
+    position: fixed;
+    width: 300px;
+    height: 100px;
+    left: 40%;
+    top: 40%;
+    box-sizing: border-box;
+    text-align: center;
+ }
+ #confirm button {
+    background-color: #FFFFFF;
+    display: inline-block;
+    border-radius: 12px;
+    border: 6px solid #000000;
+    padding: 5px;
+    text-align: center;
+    width: 60px;
+    cursor: pointer;
+ }
+ #confirm .message {
+    text-align: left;
+ }
+ .message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.fa-solid {
+    color: #fff700;
+}
+.fa-solid:hover{
+    color:black;
+}
+.fa-regular:hover{
+    color:yellow
+}

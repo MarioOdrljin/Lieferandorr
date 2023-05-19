@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="script.js"></script>
+  <title>Lieferando</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/big.js/5.2.2/big.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body onload="shoppingcard ()">
+
+  <div class="main-content">
+    <nav class="navbar">
+      <img class="navbar-logo" src="img/lieferando_logo.png" alt="logo">
+      <span class="location"> Kolbstraße Nr. 59</span>
+      <div class="dropdown" i class="fa-sharp fa-solid fa-bars fa-xl" onclick="discardwarenkorb()"></i>
+        <i class="fa-sharp fa-solid fa-bars fa-xl"></i>
+      </div>
+    </nav>
+    <div class="main-container">
+      <div class="resturant-container" id="resturant-container">
+        <div class="resturant-picture">
+          <img src="img/resturant1.jpg" class="resturant-picture">
+        </div>
+        <div class="resturant-title">
+          <div class="resturant-rating">
+            <h2> Croccante Resturant</h2>
+            <div class="resturant-ratingstars">
+              <i class="fa-solid fa-star" style="color: #ff7e29;"></i>
+              <i class="fa-solid fa-star" style="color: #ff7e29;"></i>
+              <i class="fa-solid fa-star" style="color: #ff7e29;"></i>
+              <i class="fa-solid fa-star" style="color: #ff7e29;"></i>
+              <i class="fa-solid fa-star" style="color: #ff7e29;"></i>
+              <span class="resturant-rating-overall"> 513 Bewertungen </span>
+            </div>
+          </div>
+          <div class="resturant-logo">
+            <img src="img/logo.png" class="resturant-logo" id="resturant-logo">
+          </div>
+          <div class="resturant-infofavo">
+            <div class="resturant-info">
+              <i class="fa-solid fa-info" style="color: black" onclick="functionAlert()"></i>
+              <div id="confirm">
+                <div class="message">Croccante Resturant<br>
+                  Kolbstraße Nr. 59<br>
+                  Leverkusen 51381 <br>
+                </div><br>
+                <button class="yes">OK</button>
+              </div>
+
+
+            </div>
+            <div class="btn_favo" id="favo">
+              <i class="fa-regular fa-star fa-lg" id="star" onclick="favo(this)"></i>
+            </div>
+            
+          </div>
+        </div>
+        <div class="resturant-menu">
+          <div class="resturant-slider">
+            <ul class="resturant-orders">
+
+              <input type="text" id="search" onkeydown="filterItems()" placeholder="Search" style="text-align: center;">
+              </input>
+              <a class="resturant-links" href="#" li onclick="shoppingcard()"> Alle Gerichte </li> </a>
+              <a class="resturant-links" href="#" li onclick="searchpizza()"> Pizza</li> </a>
+              <a class="resturant-links" href="#" li onclick="searchsalat()"> Salat </li> </a>
+              <a class="resturant-links" href="#" li onclick="searchnoodels()"> Nudeln </li> </a>
+              <a class="resturant-links" href="#" li onclick="searchdeserts()"> Deserts </li> </a>
+              <a class="resturant-links" href="#" li onclick="searchdrinks()"> Getränke </li> </a>
+              <i class="resturant-links" class="fa-solid fa-arrow-right fa-lg" style="color: #000000;"></i>
+              <ul>
+          </div>
+        </div>
+        <div class="resturant-dishcards" id="resturant-dishcards"></div>
+      </div>
+
+      <div class="shopping-card-container" id="shopping-card-container">
+
+        <div class="shopping-order">
+
+          <h2> Warenkorb </h2>
+          <div class="warenkorb-content-scroll">
+            <i class="fa-light fa-bags-shopping fa-lg" style="color: #9e9e9e;"></i>
+            <span class="warenkorb" id="warenkorb"> Wähle leckere Gerichte aus der Karte und bestelle dein Menu</span>
+          </div>
+        </div>
+        <div class="shopping-result">
+          <span class="shopping-order" id="shopping_subtotal"> Zwischensumme: </span>
+          <span class="shopping-order" id="shopping-delivery-costs"> Lieferkosten: 2€ </span>
+          <span class="shopping-order" id="shopping_total"> Gesammtkosten: </span>
+        </div>
+        <div class="shopping-finisher">
+          <button onclick="order()" class="returant-order"><b>Order</b></button>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</body>
+
+</html>
